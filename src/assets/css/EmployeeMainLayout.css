@@ -1,0 +1,153 @@
+/* PAGE */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: #f4f7fc;
+    min-height: calc(100vh - 80px);
+}
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    background: linear-gradient(
+        135deg,
+        #1565c0,
+        #0d47a1
+    );
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0 25px;
+
+    position: relative;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logout-btn {
+    background: #ef5350;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #d32f2f;
+}
+
+/* LEFT */
+.left {
+    width: 25%;
+}
+
+/* CENTER */
+.middle {
+    width: 45%;
+}
+
+/* QUICK LINKS */
+.quick-links {
+
+    width: 30%;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quick-title {
+
+    text-align: center;
+
+    color: #0d47a1;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 2px solid #e3f2fd;
+
+    padding-bottom: 10px;
+}
+
+/* CUSTOMER CARD */
+.employee-customer {
+
+    background: linear-gradient(
+        135deg,
+        #42a5f5,
+        #1565c0
+    );
+
+    color: white;
+}
+
+/* JOB CARD */
+.employee-job {
+
+    background: linear-gradient(
+        135deg,
+        #66bb6a,
+        #2e7d32
+    );
+
+    color: white;
+}
+
+.quick-card {
+
+    text-decoration: none;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 4px 10px
+        rgba(0,0,0,0.15);
+}
+
+.quick-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.25);
+}

@@ -1,0 +1,562 @@
+/* =========================================================
+   STATISTICS SECTION
+   PREMIUM BLUE LUXURY UI
+   Smart Data Recovery Solutions
+========================================================= */
+
+.statistics {
+  width: 100%;
+  padding: 105px 0;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(0, 174, 239, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(0, 102, 204, 0.18),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #061a2f 0%,
+      #082d4f 48%,
+      #075ca0 100%
+    );
+}
+
+
+/* =========================================================
+   PREMIUM BACKGROUND LIGHT
+========================================================= */
+
+.statistics::before {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  top: -330px;
+  left: -220px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 174, 239, 0.13),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+.statistics::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -250px;
+  bottom: -300px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 102, 204, 0.20),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.statistics-container {
+  width: 92%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.statistics-heading {
+  max-width: 800px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SMALL LABEL
+========================================================= */
+
+.statistics-heading span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #00aeef;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.statistics-heading h2 {
+  margin: 0 0 18px;
+
+  color: #dfe7ee;
+
+  font-size: 44px;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   BLUE HIGHLIGHT
+========================================================= */
+
+.statistics-heading h2 strong {
+  color: #00aeef;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.statistics-heading p {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  color: #b9c7d4;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.statistics-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 26px;
+}
+
+
+/* =========================================================
+   STAT CARD
+========================================================= */
+
+.stat-card {
+  min-height: 295px;
+
+  padding: 42px 25px 35px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(151, 190, 220, 0.20);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 54, 87, 0.94),
+      rgba(3, 23, 42, 0.97)
+    );
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(12px);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   TOP BLUE LINE
+========================================================= */
+
+.stat-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #00aeef,
+      #48d8ff,
+      #00aeef,
+      transparent
+    );
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition: transform 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD BLUE GLOW
+========================================================= */
+
+.stat-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 200px;
+  height: 200px;
+
+  right: -120px;
+  bottom: -120px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 174, 239, 0.10),
+      transparent 70%
+    );
+
+  pointer-events: none;
+
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.stat-card:hover {
+  transform: translateY(-10px);
+
+  border-color:
+    rgba(0, 174, 239, 0.55);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.42),
+    0 0 30px rgba(0, 174, 239, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+
+.stat-card:hover::after {
+  width: 280px;
+  height: 280px;
+}
+
+
+/* =========================================================
+   SMALL NUMBER
+========================================================= */
+
+.stat-number {
+  position: absolute;
+
+  top: 18px;
+  right: 22px;
+
+  color:
+    rgba(190, 205, 218, 0.30);
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   ICON BOX
+========================================================= */
+
+.stat-icon {
+  width: 78px;
+  height: 78px;
+
+  margin: 0 auto 24px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  color: #e4edf4;
+
+  font-size: 29px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0c659b,
+      #063455
+    );
+
+  border: 1px solid
+    rgba(0, 174, 239, 0.35);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.30),
+    0 0 20px rgba(0, 174, 239, 0.08),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.10);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.stat-card:hover .stat-icon {
+  transform:
+    translateY(-5px)
+    scale(1.04);
+
+  color: #ffffff;
+
+  border-color:
+    rgba(0, 174, 239, 0.75);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.40),
+    0 0 28px rgba(0, 174, 239, 0.20);
+}
+
+
+/* =========================================================
+   STAT NUMBER VALUE
+========================================================= */
+
+.stat-card h3 {
+  margin: 0 0 9px;
+
+  color: #e3e8ed;
+
+  font-size: 38px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+
+  line-height: 1.2;
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   STAT TITLE
+========================================================= */
+
+.stat-card p {
+  margin: 0;
+
+  color: #aebdca;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SILVER TEXT EFFECT
+========================================================= */
+
+.statistics-heading h2,
+.stat-card h3 {
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #dfe6ec 45%,
+      #aebbc6 100%
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+  .statistics {
+    padding: 85px 0;
+  }
+
+  .statistics-heading {
+    margin-bottom: 50px;
+  }
+
+  .statistics-heading h2 {
+    font-size: 37px;
+  }
+
+  .statistics-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+  .statistics {
+    padding: 70px 0;
+  }
+
+  .statistics-container {
+    width: 90%;
+  }
+
+  .statistics-heading {
+    margin-bottom: 40px;
+  }
+
+  .statistics-heading span {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+  }
+
+  .statistics-heading h2 {
+    font-size: 30px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .statistics-heading p {
+    font-size: 15px;
+  }
+
+  .statistics-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .stat-card {
+    min-height: auto;
+
+    padding: 38px 22px 32px;
+  }
+
+  .stat-icon {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 16px;
+
+    font-size: 27px;
+  }
+
+  .stat-card h3 {
+    font-size: 34px;
+  }
+
+  .stat-card p {
+    font-size: 14px;
+  }
+}

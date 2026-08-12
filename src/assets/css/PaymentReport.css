@@ -1,0 +1,200 @@
+/* PAGE */
+
+.report-container {
+    padding: 25px;
+    background: #f4f6f9;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+
+.report-header {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80px;
+
+    background: linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 12px
+        rgba(0, 0, 0, 0.2);
+}
+
+.report-header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #ffffff !important;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    margin: 0;
+    text-align: center;
+}
+
+/* BACK BUTTON */
+
+.home-btn {
+    position: absolute;
+
+    left: 20px;
+
+    background: white;
+
+    color: #0d47a1;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #e3f2fd;
+    transform: translateY(-2px);
+}
+
+/* EXPORT BUTTONS */
+
+.report-actions {
+    margin-bottom: 20px;
+
+    display: flex;
+
+    gap: 15px;
+}
+
+.pdf-btn {
+    background: #d32f2f;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.pdf-btn:hover {
+    background: #b71c1c;
+}
+
+.excel-btn {
+    background: #2e7d32;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.excel-btn:hover {
+    background: #1b5e20;
+}
+
+/* TABLE */
+
+.table-wrapper {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px
+        rgba(0, 0, 0, 0.1);
+}
+
+.report-table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.report-table th {
+    background: #0d47a1;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 15px;
+}
+
+.report-table td {
+    padding: 14px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.report-table tr:nth-child(even) {
+    background: #f9fbff;
+}
+
+.report-table tr:hover {
+    background: #e3f2fd;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .report-header h1 {
+        font-size: 20px;
+    }
+
+    .home-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .report-actions {
+        flex-direction: column;
+    }
+
+    .pdf-btn,
+    .excel-btn {
+        width: 100%;
+    }
+}

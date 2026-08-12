@@ -1,0 +1,1121 @@
+/* =========================================================
+   SMART DATA RECOVERY
+   PREMIUM ABOUT PAGE
+   DARK BLUE + SILVER + CYAN
+========================================================= */
+
+.about-page {
+  width: 100%;
+  overflow: hidden;
+  background: #061a2d;
+  color: #d9e2ec;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.about-container {
+  width: 92%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-banner {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(0, 174, 239, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(0, 102, 204, 0.14),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #031522 0%,
+      #06243d 45%,
+      #063c68 100%
+    );
+}
+
+
+/* =========================================================
+   HERO GLOW
+========================================================= */
+
+.about-banner-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  top: -250px;
+  right: -150px;
+
+  background: rgba(0, 174, 239, 0.08);
+
+  filter: blur(20px);
+
+  pointer-events: none;
+}
+
+.about-banner-glow.second {
+  width: 400px;
+  height: 400px;
+
+  top: auto;
+  right: auto;
+
+  bottom: -250px;
+  left: -180px;
+
+  background: rgba(0, 102, 204, 0.08);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.about-banner-content {
+  width: 92%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(450px, 0.9fr);
+
+  align-items: center;
+
+  gap: 80px;
+
+  position: relative;
+  z-index: 3;
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.about-banner-text {
+  max-width: 700px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.about-label {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  color: #00aeef;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.about-banner-text h1 {
+  margin: 0 0 25px;
+
+  color: #cbd5df;
+
+  font-size: clamp(48px, 5vw, 72px);
+
+  font-weight: 850;
+
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+
+/* BLUE HIGHLIGHT */
+
+.about-banner-text h1 strong {
+  display: block;
+
+  color: #00aeef;
+
+  font-weight: 850;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.about-banner-text > p {
+  max-width: 650px;
+
+  margin: 0 0 35px;
+
+  color: #aebdcb;
+
+  font-size: 17px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.about-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+}
+
+
+.about-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  min-height: 54px;
+
+  padding: 0 28px;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00aeef,
+      #0066cc
+    );
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 12px 30px rgba(0, 174, 239, 0.22);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.about-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 174, 239, 0.35);
+}
+
+
+.about-btn svg {
+  font-size: 13px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.about-btn:hover svg {
+  transform: translateX(4px);
+}
+
+
+/* SECONDARY BUTTON */
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(190, 205, 220, 0.25);
+
+  color: #cbd5df;
+
+  box-shadow: none;
+}
+
+
+.secondary-btn:hover {
+  background: rgba(0, 174, 239, 0.10);
+
+  border-color: rgba(0, 174, 239, 0.55);
+
+  box-shadow:
+    0 12px 30px rgba(0, 174, 239, 0.12);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.about-banner-image {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* IMAGE GLOW */
+
+.image-glow {
+  position: absolute;
+
+  width: 90%;
+
+  height: 80%;
+
+  background:
+    rgba(0, 174, 239, 0.20);
+
+  filter: blur(55px);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
+
+.image-frame {
+  position: relative;
+
+  width: 100%;
+
+  padding: 10px;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 174, 239, 0.8),
+      rgba(0, 102, 204, 0.25),
+      rgba(140, 160, 180, 0.45)
+    );
+
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.45);
+
+  z-index: 2;
+}
+
+
+.image-frame::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 1px;
+
+  border-radius: 29px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  pointer-events: none;
+}
+
+
+.image-frame img {
+  display: block;
+
+  width: 100%;
+
+  height: 430px;
+
+  object-fit: cover;
+
+  border-radius: 22px;
+}
+
+
+/* =========================================================
+   WHO WE ARE
+========================================================= */
+
+.about-company {
+  position: relative;
+
+  padding: 110px 0;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(0, 174, 239, 0.07),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #061a2d 0%,
+      #071f35 100%
+    );
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.about-section-title {
+  max-width: 850px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.about-section-title span {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #00aeef;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+}
+
+
+.about-section-title h2 {
+  margin: 0 0 17px;
+
+  color: #cbd5df;
+
+  font-size: 42px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+.about-section-title h2 strong {
+  color: #00aeef;
+}
+
+
+.about-section-title p {
+  margin: 0 auto;
+
+  color: #91a5b8;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   COMPANY BOX
+========================================================= */
+
+.about-company-box {
+  position: relative;
+
+  max-width: 1050px;
+
+  margin: auto;
+
+  padding: 45px 50px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(12, 48, 77, 0.92),
+      rgba(5, 29, 49, 0.96)
+    );
+
+  border: 1px solid rgba(0, 174, 239, 0.16);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+
+.about-company-line {
+  position: absolute;
+
+  top: 0;
+  left: 40px;
+
+  width: 100px;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00aeef,
+      #0066cc
+    );
+
+  border-radius: 10px;
+}
+
+
+.about-company-box p {
+  margin: 0 0 20px;
+
+  color: #aebdcb;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+.about-company-box p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FEATURES SECTION
+========================================================= */
+
+.about-features {
+  position: relative;
+
+  padding: 110px 0;
+
+  background:
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(0, 174, 239, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #041725 0%,
+      #082942 50%,
+      #061c31 100%
+    );
+}
+
+
+/* =========================================================
+   FEATURE GRID
+========================================================= */
+
+.about-feature-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   FEATURE CARD
+========================================================= */
+
+.about-feature-card {
+  position: relative;
+
+  min-height: 320px;
+
+  padding: 38px 28px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 54, 87, 0.95),
+      rgba(5, 28, 48, 0.98)
+    );
+
+  border: 1px solid rgba(0, 174, 239, 0.16);
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.28);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.about-feature-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00aeef,
+      #0066cc
+    );
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition: 0.35s ease;
+}
+
+
+.about-feature-card:hover {
+  transform: translateY(-10px);
+
+  border-color:
+    rgba(0, 174, 239, 0.50);
+
+  box-shadow:
+    0 25px 55px rgba(0, 0, 0, 0.38),
+    0 0 25px rgba(0, 174, 239, 0.08);
+}
+
+
+.about-feature-card:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   FEATURE NUMBER
+========================================================= */
+
+.feature-number {
+  position: absolute;
+
+  top: 18px;
+  right: 20px;
+
+  color: rgba(180, 195, 210, 0.30);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FEATURE ICON
+========================================================= */
+
+.feature-icon {
+  width: 72px;
+  height: 72px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00aeef,
+      #0066cc
+    );
+
+  color: #ffffff;
+
+  font-size: 28px;
+
+  box-shadow:
+    0 12px 30px rgba(0, 174, 239, 0.22);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.about-feature-card:hover .feature-icon {
+  transform: translateY(-5px) scale(1.05);
+
+  box-shadow:
+    0 18px 38px rgba(0, 174, 239, 0.35);
+}
+
+
+/* =========================================================
+   FEATURE TITLE
+========================================================= */
+
+.about-feature-card h3 {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0 0 14px;
+
+  color: #d5dee7;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   FEATURE DESCRIPTION
+========================================================= */
+
+.about-feature-card p {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0;
+
+  color: #91a5b8;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   MISSION
+========================================================= */
+
+.mission {
+  position: relative;
+
+  padding: 110px 0;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(0, 174, 239, 0.14),
+      transparent 42%
+    ),
+    linear-gradient(
+      135deg,
+      #031521,
+      #062b49,
+      #041a2d
+    );
+}
+
+
+/* =========================================================
+   MISSION GLOW
+========================================================= */
+
+.mission-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 174, 239, 0.06);
+
+  filter: blur(30px);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   MISSION BOX
+========================================================= */
+
+.mission-box {
+  position: relative;
+
+  max-width: 950px;
+
+  margin: auto;
+
+  padding: 65px 50px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(12, 55, 88, 0.92),
+      rgba(4, 27, 46, 0.98)
+    );
+
+  border: 1px solid rgba(0, 174, 239, 0.20);
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.35);
+}
+
+
+.mission-box > span {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #00aeef;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+
+.mission-box h2 {
+  margin: 0 0 20px;
+
+  color: #d4dde6;
+
+  font-size: 42px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+}
+
+
+.mission-box h2 strong {
+  color: #00aeef;
+}
+
+
+.mission-box p {
+  max-width: 750px;
+
+  margin: 0 auto 32px;
+
+  color: #9fb1c3;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   MISSION BUTTON
+========================================================= */
+
+.mission-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 15px 28px;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00aeef,
+      #0066cc
+    );
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 12px 30px rgba(0, 174, 239, 0.25);
+
+  transition: 0.3s ease;
+}
+
+
+.mission-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 174, 239, 0.35);
+}
+
+
+.mission-btn svg {
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .about-banner {
+    min-height: auto;
+
+    padding: 100px 0;
+  }
+
+  .about-banner-content {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+
+    text-align: center;
+  }
+
+  .about-banner-text {
+    max-width: 800px;
+
+    margin: auto;
+  }
+
+  .about-banner-text > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+
+  .about-banner-image {
+    max-width: 700px;
+
+    margin: auto;
+  }
+
+  .about-feature-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .about-banner {
+    padding: 75px 0;
+  }
+
+  .about-banner-content {
+    width: 90%;
+
+    gap: 45px;
+  }
+
+  .about-label {
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .about-banner-text h1 {
+    font-size: 40px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-banner-text > p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .about-btn {
+    width: 220px;
+  }
+
+  .image-frame {
+    padding: 7px;
+
+    border-radius: 22px;
+  }
+
+  .image-frame img {
+    height: 300px;
+
+    border-radius: 16px;
+  }
+
+  .about-company,
+  .about-features,
+  .mission {
+    padding: 75px 0;
+  }
+
+  .about-section-title {
+    margin-bottom: 40px;
+  }
+
+  .about-section-title h2 {
+    font-size: 30px;
+  }
+
+  .about-section-title p {
+    font-size: 14px;
+  }
+
+  .about-company-box {
+    padding: 35px 25px;
+  }
+
+  .about-company-box p {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+  .about-feature-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .about-feature-card {
+    min-height: auto;
+
+    padding: 35px 25px;
+  }
+
+  .mission-box {
+    padding: 45px 25px;
+
+    border-radius: 20px;
+  }
+
+  .mission-box h2 {
+    font-size: 30px;
+  }
+
+  .mission-box p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .about-banner-text h1 {
+    font-size: 34px;
+  }
+
+  .about-section-title h2 {
+    font-size: 27px;
+  }
+
+  .mission-box h2 {
+    font-size: 27px;
+  }
+
+  .image-frame img {
+    height: 250px;
+  }
+
+}

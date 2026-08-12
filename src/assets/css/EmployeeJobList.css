@@ -1,0 +1,156 @@
+/* PAGE */
+
+.job-list-container {
+    padding: 25px;
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.job-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #0d47a1;
+    color: white;
+
+    padding: 15px 25px;
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+}
+
+.job-navbar h2 {
+    margin: 0;
+    color: white;
+}
+
+/* HOME BUTTON */
+
+.nav-btn {
+    background: white;
+    color: #0d47a1;
+
+    border: none;
+    padding: 10px 18px;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #e3f2fd;
+}
+
+/* SEARCH */
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 320px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 14px;
+    outline: none;
+}
+
+.search-box:focus {
+    border-color: #1976d2;
+    box-shadow:
+        0 0 5px
+        rgba(25,118,210,0.3);
+}
+
+/* TABLE */
+
+.table-wrapper {
+    background: white;
+    border-radius: 12px;
+    overflow-x: auto;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.1);
+}
+
+.job-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.job-table th {
+    background: #1565c0;
+    color: white;
+
+    padding: 15px;
+    text-align: center;
+
+    font-size: 15px;
+}
+
+.job-table td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.job-table tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+.job-table tr:hover {
+    background: #e8f5e9;
+}
+
+/* UPDATE STATUS BUTTON */
+
+.edit-btn {
+    background: #2e7d32;
+    color: white;
+
+    border: none;
+    padding: 8px 16px;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-2px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .job-navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container {
+        justify-content: center;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,669 @@
+/* =========================================================
+   DVR & NVR DATA RECOVERY
+   PREMIUM DARK BLUE DESIGN
+========================================================= */
+
+.dvr-recovery-page {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 100px 5% 80px;
+
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(0, 174, 239, 0.14),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 90% 85%,
+      rgba(0, 102, 204, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #061b2e 0%,
+      #082c47 50%,
+      #061a2d 100%
+    );
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.dvr-recovery-header {
+  max-width: 1050px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+
+/* ICON */
+
+.dvr-recovery-icon {
+  width: 105px;
+  height: 105px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00aeef,
+      #0066cc
+    );
+
+  color: #ffffff;
+
+  font-size: 48px;
+
+  box-shadow:
+    0 20px 45px rgba(0, 174, 239, 0.28),
+    0 0 50px rgba(0, 174, 239, 0.10);
+}
+
+
+/* LABEL */
+
+.dvr-recovery-label {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #00aeef;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 5px;
+}
+
+
+/* TITLE */
+
+.dvr-recovery-header h1 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: clamp(38px, 5vw, 62px);
+
+  font-weight: 700;
+
+  line-height: 1.12;
+
+  letter-spacing: -1px;
+}
+
+.dvr-recovery-header h1 strong {
+  color: #00aeef;
+}
+
+
+/* DESCRIPTION */
+
+.dvr-recovery-header p {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  color: #b9ccdc;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   CONTENT GRID
+========================================================= */
+
+.dvr-recovery-content {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.dvr-recovery-box {
+  position: relative;
+
+  min-height: 450px;
+
+  padding: 42px 36px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 63, 91, 0.92),
+      rgba(5, 31, 51, 0.97)
+    );
+
+  border: 1px solid
+    rgba(137, 193, 222, 0.18);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.28);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* TOP LINE */
+
+.dvr-recovery-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 32px;
+  right: 32px;
+
+  height: 4px;
+
+  border-radius: 0 0 10px 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00aeef,
+      #0066cc
+    );
+}
+
+
+/* CARD HOVER */
+
+.dvr-recovery-box:hover {
+  transform: translateY(-9px);
+
+  border-color:
+    rgba(0, 174, 239, 0.50);
+
+  box-shadow:
+    0 28px 65px
+    rgba(0, 174, 239, 0.14);
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.dvr-recovery-box-number {
+  position: absolute;
+
+  top: 25px;
+  right: 28px;
+
+  color:
+    rgba(255, 255, 255, 0.24);
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.dvr-recovery-box-icon {
+  width: 55px;
+  height: 55px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background:
+    rgba(0, 174, 239, 0.12);
+
+  border:
+    1px solid rgba(0, 174, 239, 0.25);
+
+  color: #00aeef;
+
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   TITLES
+========================================================= */
+
+.dvr-recovery-box h2 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  line-height: 1.35;
+}
+
+
+.dvr-recovery-box h3 {
+  margin: 30px 0 12px;
+
+  color: #00aeef;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+.dvr-recovery-box p {
+  margin: 0;
+
+  color: #b9ccdc;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.dvr-recovery-box ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.dvr-recovery-box li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 14px 0;
+
+  color: #d8e5ed;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.dvr-recovery-box li:last-child {
+  border-bottom: none;
+}
+
+
+/* LIST ICON */
+
+.dvr-recovery-box li svg {
+  flex-shrink: 0;
+
+  color: #00aeef;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.dvr-recovery-box small {
+  display: block;
+
+  margin-top: 18px;
+
+  color: #8fa9ba;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.dvr-recovery-cta {
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 70px auto 0;
+
+  padding: 45px 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #082f4e,
+      #07527e
+    );
+
+  border:
+    1px solid rgba(0, 174, 239, 0.25);
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* CTA LABEL */
+
+.dvr-recovery-cta > div > span {
+  color: #00aeef;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+
+/* CTA TITLE */
+
+.dvr-recovery-cta h2 {
+  margin: 10px 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+
+  line-height: 1.35;
+}
+
+
+.dvr-recovery-cta h2 strong {
+  color: #00aeef;
+}
+
+
+/* CTA TEXT */
+
+.dvr-recovery-cta p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #b9ccdc;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* CTA BUTTON */
+
+.dvr-recovery-cta a {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 16px 30px;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00aeef,
+      #0066cc
+    );
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 12px 30px
+    rgba(0, 174, 239, 0.25);
+
+  transition: 0.3s ease;
+}
+
+
+.dvr-recovery-cta a:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 40px
+    rgba(0, 174, 239, 0.35);
+}
+
+
+.dvr-recovery-cta a span {
+  color: #ffffff;
+
+  font-size: 20px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .dvr-recovery-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dvr-recovery-box:last-child {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .dvr-recovery-page {
+    padding: 70px 20px 60px;
+  }
+
+
+  .dvr-recovery-header {
+    margin-bottom: 50px;
+  }
+
+
+  .dvr-recovery-icon {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 22px;
+
+    font-size: 38px;
+  }
+
+
+  .dvr-recovery-label {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .dvr-recovery-header h1 {
+    font-size: 38px;
+  }
+
+
+  .dvr-recovery-header p {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+
+  .dvr-recovery-content {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+
+  .dvr-recovery-box:last-child {
+    grid-column: auto;
+  }
+
+
+  .dvr-recovery-box {
+    min-height: auto;
+
+    padding: 35px 25px;
+  }
+
+
+  .dvr-recovery-box h2 {
+    font-size: 22px;
+  }
+
+
+  .dvr-recovery-cta {
+    margin-top: 45px;
+
+    padding: 35px 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .dvr-recovery-cta h2 {
+    font-size: 25px;
+  }
+
+
+  .dvr-recovery-cta a {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .dvr-recovery-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .dvr-recovery-header h1 {
+    font-size: 32px;
+  }
+
+
+  .dvr-recovery-box {
+    padding: 32px 22px;
+  }
+
+
+  .dvr-recovery-box li {
+    font-size: 14px;
+  }
+
+
+  .dvr-recovery-cta h2 {
+    font-size: 22px;
+  }
+
+}

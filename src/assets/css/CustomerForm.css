@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f7fa;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===========================
+   CUSTOMER FORM
+=========================== */
+
+.customer-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.customer-card {
+    width: 100%;
+    background: #f4f9ff;
+    border: 1px solid #d6e9ff;
+    border-radius: 15px;
+    padding: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.customer-card h2 {
+    text-align: center;
+    color: #1976d2;
+    margin-bottom: 18px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ===========================
+   LABELS
+=========================== */
+
+.customer-card label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.customer-card input,
+.customer-card textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.customer-card input:focus,
+.customer-card textarea:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 5px rgba(25,118,210,0.25);
+}
+
+.customer-card textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.save-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    background: linear-gradient(
+        135deg,
+        #2e7d32,
+        #43a047
+    );
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   ERROR
+=========================== */
+
+.error {
+    color: #d32f2f;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/* ===========================
+   SUCCESS
+=========================== */
+
+.success-message {
+    text-align: center;
+    margin-top: 12px;
+    color: #2e7d32;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+    .customer-card {
+        padding: 15px;
+    }
+
+    .customer-card h2 {
+        font-size: 24px;
+    }
+
+    .customer-card label {
+        font-size: 14px;
+    }
+
+    .customer-card input,
+    .customer-card textarea {
+        padding: 9px;
+        font-size: 14px;
+    }
+
+    .save-btn {
+        padding: 11px;
+        font-size: 15px;
+    }
+}

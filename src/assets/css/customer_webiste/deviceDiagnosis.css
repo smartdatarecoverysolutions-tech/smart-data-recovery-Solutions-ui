@@ -1,0 +1,813 @@
+/* =========================================================
+   CCTV RECOVERY PAGE
+========================================================= */
+
+.cctv-recovery-page {
+  width: 100%;
+  min-height: 100vh;
+
+  font-family: "Poppins", sans-serif;
+
+  color: #ffffff;
+
+  background: #071426;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.cctv-recovery-hero {
+  position: relative;
+
+  padding: 110px 20px 100px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(0, 174, 239, 0.20),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #061222,
+      #0a2540 55%,
+      #06345d
+    );
+}
+
+
+.cctv-hero-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  top: -300px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: rgba(0, 174, 239, 0.14);
+
+  filter: blur(100px);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.cctv-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 900px;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   HERO ICON
+========================================================= */
+
+.cctv-hero-icon {
+  width: 90px;
+  height: 90px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 24px;
+
+  background: linear-gradient(
+    135deg,
+    #0056d2,
+    #00aeef
+  );
+
+  color: #ffffff;
+
+  font-size: 38px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 174, 239, 0.25);
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.cctv-label {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #00aeef;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.cctv-hero-content h1 {
+  margin: 0 0 22px;
+
+  font-size: 52px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+.cctv-hero-content h1 strong {
+  color: #00aeef;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.cctv-hero-content p {
+  max-width: 780px;
+
+  margin: auto;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: #c2cfdf;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.cctv-recovery-content {
+  padding: 90px 20px 100px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #071426,
+      #0a1b30
+    );
+}
+
+
+.cctv-recovery-grid {
+  width: 92%;
+
+  max-width: 1350px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.cctv-recovery-card {
+  position: relative;
+
+  padding: 40px 32px;
+
+  min-height: 400px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #122741,
+      #091b30
+    );
+
+  border: 1px solid rgba(
+    145,
+    181,
+    215,
+    0.14
+  );
+
+  box-shadow:
+    0 20px 50px rgba(
+      0,
+      0,
+      0,
+      0.25
+    );
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+
+  overflow: hidden;
+}
+
+
+/* Top blue line */
+
+.cctv-recovery-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #0056d2,
+    #00aeef
+  );
+}
+
+
+/* Hover */
+
+.cctv-recovery-card:hover {
+  transform: translateY(-10px);
+
+  border-color:
+    rgba(0, 174, 239, 0.35);
+
+  box-shadow:
+    0 30px 65px rgba(
+      0,
+      0,
+      0,
+      0.35
+    );
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.cctv-card-icon {
+  width: 62px;
+  height: 62px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 17px;
+
+  background:
+    rgba(0, 174, 239, 0.10);
+
+  border:
+    1px solid rgba(
+      0,
+      174,
+      239,
+      0.18
+    );
+
+  color: #00aeef;
+
+  font-size: 27px;
+
+  transition: 0.35s;
+}
+
+
+.cctv-recovery-card:hover
+.cctv-card-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #0056d2,
+      #00aeef
+    );
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.cctv-recovery-card h2 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: 23px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   UNORDERED LIST
+========================================================= */
+
+.cctv-recovery-card ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+.cctv-recovery-card ul li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+
+  color: #c6d3e2;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+.cctv-recovery-card ul li svg {
+  flex-shrink: 0;
+
+  margin-top: 4px;
+
+  color: #00aeef;
+
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   RECOVERY PROCESS
+========================================================= */
+
+.cctv-recovery-card ol {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+  counter-reset: recovery;
+}
+
+
+.cctv-recovery-card ol li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+
+  color: #c6d3e2;
+
+  font-size: 15px;
+}
+
+
+/* Number */
+
+.cctv-recovery-card ol li span {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background:
+    rgba(0, 174, 239, 0.10);
+
+  border:
+    1px solid rgba(
+      0,
+      174,
+      239,
+      0.20
+    );
+
+  color: #00aeef;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SECURITY SECTION
+========================================================= */
+
+.cctv-recovery-security {
+  padding: 80px 20px;
+
+  background:
+    #0a1d32;
+}
+
+
+.cctv-security-container {
+  width: 92%;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 40px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 86, 210, 0.18),
+      rgba(0, 174, 239, 0.07)
+    );
+
+  border:
+    1px solid rgba(
+      0,
+      174,
+      239,
+      0.18
+    );
+}
+
+
+.cctv-security-icon {
+  width: 75px;
+  height: 75px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0056d2,
+      #00aeef
+    );
+
+  color: #ffffff;
+
+  font-size: 30px;
+}
+
+
+.cctv-security-content span {
+  color: #00aeef;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.cctv-security-content h2 {
+  margin: 8px 0 12px;
+
+  font-size: 30px;
+
+  color: #ffffff;
+}
+
+
+.cctv-security-content p {
+  margin: 0;
+
+  max-width: 800px;
+
+  color: #afbdce;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cctv-recovery-cta {
+  position: relative;
+
+  padding: 100px 20px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(0, 174, 239, 0.20),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #071426,
+      #0a2540,
+      #0056a8
+    );
+}
+
+
+.cctv-cta-content {
+  max-width: 850px;
+
+  margin: auto;
+}
+
+
+.cctv-cta-content > span {
+  color: #00aeef;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.cctv-cta-content h2 {
+  margin: 15px 0 20px;
+
+  font-size: 42px;
+
+  line-height: 1.25;
+
+  color: #ffffff;
+}
+
+
+.cctv-cta-content h2 strong {
+  color: #00aeef;
+}
+
+
+.cctv-cta-content p {
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  color: #c4d0df;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cctv-recovery-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 15px 32px;
+
+  border-radius: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0066cc,
+      #00aeef
+    );
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 15px 35px rgba(
+      0,
+      174,
+      239,
+      0.20
+    );
+
+  transition: 0.35s;
+}
+
+
+.cctv-recovery-btn:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 45px rgba(
+      0,
+      174,
+      239,
+      0.30
+    );
+}
+
+
+.cctv-recovery-btn span {
+  font-size: 20px;
+
+  transition: 0.3s;
+}
+
+
+.cctv-recovery-btn:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .cctv-recovery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .cctv-recovery-hero {
+    padding: 80px 20px;
+  }
+
+  .cctv-hero-content h1 {
+    font-size: 38px;
+  }
+
+  .cctv-hero-content p {
+    font-size: 15px;
+  }
+
+  .cctv-recovery-content {
+    padding: 70px 15px;
+  }
+
+  .cctv-recovery-grid {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .cctv-recovery-card {
+    min-height: auto;
+
+    padding: 32px 25px;
+  }
+
+  .cctv-security-container {
+    width: 100%;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 35px 25px;
+  }
+
+  .cctv-security-content h2 {
+    font-size: 25px;
+  }
+
+  .cctv-cta-content h2 {
+    font-size: 32px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .cctv-hero-icon {
+    width: 75px;
+    height: 75px;
+
+    font-size: 30px;
+
+    border-radius: 20px;
+  }
+
+  .cctv-hero-content h1 {
+    font-size: 31px;
+  }
+
+  .cctv-label {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .cctv-recovery-card h2 {
+    font-size: 21px;
+  }
+
+  .cctv-recovery-card ul li,
+  .cctv-recovery-card ol li {
+    font-size: 14px;
+  }
+
+  .cctv-cta-content h2 {
+    font-size: 28px;
+  }
+
+  .cctv-recovery-btn {
+    width: 100%;
+
+    max-width: 280px;
+  }
+
+}

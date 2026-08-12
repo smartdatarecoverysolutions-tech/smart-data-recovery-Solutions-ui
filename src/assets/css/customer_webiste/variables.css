@@ -1,0 +1,45 @@
+:root {
+
+  /* ===== Brand Colors ===== */
+
+  --primary: #0A2540;
+  --primary-light: #163C66;
+  --secondary: #0056D2;
+  --accent: #00AEEF;
+
+  --success: #00B67A;
+  --warning: #FF9800;
+  --danger: #E53935;
+
+  /* ===== Background ===== */
+
+  --bg-color: #F5F8FC;
+  --card-bg: #FFFFFF;
+  --section-bg: #F9FBFD;
+
+  /* ===== Text ===== */
+
+  --text-dark: #1E293B;
+  --text-light: #64748B;
+  --text-white: #FFFFFF;
+
+  /* ===== Border ===== */
+
+  --border-color: #E5E7EB;
+
+  /* ===== Shadow ===== */
+
+  --shadow-sm: 0 5px 15px rgba(0,0,0,.08);
+  --shadow-md: 0 10px 30px rgba(0,0,0,.10);
+  --shadow-lg: 0 20px 45px rgba(0,0,0,.15);
+
+  /* ===== Radius ===== */
+
+  --radius-sm:8px;
+  --radius-md:15px;
+  --radius-lg:25px;
+
+  /* ===== Transition ===== */
+
+  --transition:.35s ease;
+}

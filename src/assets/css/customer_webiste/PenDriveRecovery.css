@@ -1,0 +1,490 @@
+/* =========================================================
+   PEN DRIVE RECOVERY PAGE
+========================================================= */
+
+.pendrive-recovery-page {
+  min-height: 100vh;
+  padding: 110px 5% 90px;
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(0, 174, 239, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #061b2d 0%,
+      #082b45 50%,
+      #06355a 100%
+    );
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pendrive-recovery-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.pendrive-recovery-icon {
+  width: 130px;
+  height: 130px;
+
+  margin: 0 auto 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 58px;
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #00aeef,
+    #0077cc
+  );
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 174, 239, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.20);
+
+  position: relative;
+}
+
+
+/* Glow behind icon */
+
+.pendrive-recovery-icon::before {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  border-radius: 35px;
+
+  background: rgba(0, 174, 239, 0.12);
+
+  filter: blur(20px);
+
+  z-index: -1;
+}
+
+
+/* =========================================================
+   SMALL LABEL
+========================================================= */
+
+.pendrive-recovery-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #00aeef;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 6px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.pendrive-recovery-title {
+  margin: 0 auto 25px;
+
+  /* IMPORTANT:
+     No background here.
+     This removes the white rectangle.
+  */
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  font-size: clamp(38px, 5vw, 64px);
+
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  letter-spacing: -1px;
+
+  text-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Cyan word if used */
+
+.pendrive-recovery-title span {
+  color: #00aeef;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.pendrive-recovery-description {
+  max-width: 950px;
+
+  margin: 0 auto;
+
+  color: #b9d2e5;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.pendrive-recovery-content {
+  max-width: 1400px;
+
+  margin: 80px auto 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   CONTENT CARDS
+========================================================= */
+
+.pendrive-recovery-box {
+  position: relative;
+
+  padding: 38px 32px;
+
+  min-height: 330px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.20);
+
+  backdrop-filter: blur(12px);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* Top cyan line */
+
+.pendrive-recovery-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 32px;
+  right: 32px;
+
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #00aeef,
+    #0077cc
+  );
+
+  border-radius: 0 0 10px 10px;
+}
+
+
+/* Hover */
+
+.pendrive-recovery-box:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0, 174, 239, 0.45);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.28),
+    0 0 30px rgba(0, 174, 239, 0.08);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.pendrive-recovery-box h2 {
+  margin: 10px 0 28px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   CARD SUB TITLE
+========================================================= */
+
+.pendrive-recovery-box h3 {
+  margin: 28px 0 12px;
+
+  color: #00aeef;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD PARAGRAPH
+========================================================= */
+
+.pendrive-recovery-box p {
+  margin: 0;
+
+  color: #b9cede;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.pendrive-recovery-box ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.pendrive-recovery-box li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px 0;
+
+  color: #d5e4ef;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.pendrive-recovery-box li:last-child {
+  border-bottom: none;
+}
+
+
+/* Icons */
+
+.pendrive-recovery-box li svg {
+  flex-shrink: 0;
+
+  color: #00aeef;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.pendrive-recovery-cta {
+  max-width: 1000px;
+
+  margin: 80px auto 0;
+
+  padding: 45px 40px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 174, 239, 0.14),
+      rgba(0, 119, 204, 0.08)
+    );
+
+  border: 1px solid rgba(0, 174, 239, 0.22);
+
+  border-radius: 24px;
+}
+
+
+.pendrive-recovery-cta h2 {
+  margin-bottom: 12px;
+
+  color: #ffffff;
+
+  font-size: 30px;
+}
+
+
+.pendrive-recovery-cta p {
+  margin: 0;
+
+  color: #b9cede;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   REMOVE GLOBAL WHITE BACKGROUND PROBLEMS
+========================================================= */
+
+.pendrive-recovery-page h1,
+.pendrive-recovery-page h2,
+.pendrive-recovery-page h3,
+.pendrive-recovery-page p {
+  background-color: transparent;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .pendrive-recovery-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .pendrive-recovery-page {
+    padding: 90px 20px 70px;
+  }
+
+  .pendrive-recovery-icon {
+    width: 105px;
+    height: 105px;
+
+    font-size: 45px;
+
+    border-radius: 24px;
+  }
+
+  .pendrive-recovery-label {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  .pendrive-recovery-title {
+    font-size: 40px;
+  }
+
+  .pendrive-recovery-description {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .pendrive-recovery-content {
+    grid-template-columns: 1fr;
+
+    margin-top: 60px;
+  }
+
+  .pendrive-recovery-box {
+    min-height: auto;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .pendrive-recovery-page {
+    padding: 70px 15px 50px;
+  }
+
+  .pendrive-recovery-title {
+    font-size: 34px;
+  }
+
+  .pendrive-recovery-description {
+    font-size: 15px;
+  }
+
+  .pendrive-recovery-box {
+    padding: 30px 24px;
+    border-radius: 20px;
+  }
+
+  .pendrive-recovery-box h2 {
+    font-size: 22px;
+  }
+
+  .pendrive-recovery-cta {
+    padding: 35px 22px;
+  }
+
+}

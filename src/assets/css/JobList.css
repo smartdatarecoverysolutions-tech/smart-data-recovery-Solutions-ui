@@ -1,0 +1,156 @@
+.job-navbar {
+    background: linear-gradient(
+        90deg,
+        #0d47a1,
+        #1976d2
+    );
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.job-navbar h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-btn {
+    background: white;
+    color: #0d47a1;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-btn:hover {
+    background: #e3f2fd;
+}
+
+.job-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.job-table th {
+    background: #0d47a1;
+    color: white;
+    padding: 12px;
+}
+
+.job-table td,
+.job-table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.job-table tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.job-table tr:hover {
+    background: #e3f2fd;
+}
+
+.edit-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit-btn:hover {
+    background: #f57c00;
+}
+
+.delete-btn {
+    background: #e53935;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background: #c62828;
+}
+.receipt-btn {
+    background: #43a047;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.job-list-container {
+    padding: 20px;
+}
+.search-box {
+    width: 320px;
+
+    padding: 12px 18px;
+
+    border: 2px solid #1976d2;
+
+    border-radius: 25px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.1);
+}
+
+.search-box:focus {
+    border-color: #0d47a1;
+
+    box-shadow:
+        0 0 10px rgba(
+            25,
+            118,
+            210,
+            0.4
+        );
+}
+.feedback-btn {
+
+    background: #7b1fa2;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.feedback-btn:hover {
+
+    background: #6a1b9a;
+}

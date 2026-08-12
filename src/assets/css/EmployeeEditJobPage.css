@@ -1,0 +1,85 @@
+.employee-edit-container {
+    max-width: 550px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.employee-edit-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.employee-edit-header h2 {
+    color: #1565c0;
+    margin-bottom: 8px;
+}
+
+.employee-edit-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.employee-form-group {
+    margin-bottom: 20px;
+}
+
+.employee-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.employee-select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dbe4f0;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.employee-select:focus {
+    border-color: #1565c0;
+}
+
+.employee-btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.employee-save-btn {
+    flex: 1;
+    background: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.employee-save-btn:hover {
+    background: #0d47a1;
+}
+
+.employee-back-btn {
+    flex: 1;
+    background: #757575;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.employee-back-btn:hover {
+    background: #424242;
+}

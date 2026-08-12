@@ -1,0 +1,68 @@
+.payment-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.payment-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.payment-title {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 20px;
+    font-size: 26px;
+    border-bottom: 2px solid #1e3c72;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42,82,152,0.3);
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.save-payment-btn {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-payment-btn:hover {
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+}

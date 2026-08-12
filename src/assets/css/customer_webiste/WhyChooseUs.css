@@ -1,0 +1,774 @@
+/* =========================================================
+   SMART DATA RECOVERY
+   WHY CHOOSE US SECTION
+   PREMIUM BLUE LUXURY + SILVER UI
+========================================================= */
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.why-choose {
+  width: 100%;
+
+  padding: 105px 0;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(0, 174, 239, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(0, 102, 204, 0.18),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #061a2f 0%,
+      #082d4f 48%,
+      #075ca0 100%
+    );
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION - LEFT
+========================================================= */
+
+.why-choose::before {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  top: -330px;
+  left: -230px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 174, 239, 0.14),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION - RIGHT
+========================================================= */
+
+.why-choose::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -250px;
+  bottom: -300px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 102, 204, 0.20),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.why-container {
+  width: 92%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.why-heading {
+  width: 100%;
+
+  max-width: 850px;
+
+  margin: 0 auto 62px;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   SMALL TITLE
+   WHY CHOOSE US
+========================================================= */
+
+.why-heading span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #00aeef;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.why-heading h2 {
+  margin: 0 0 18px;
+
+  font-size: 44px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #e5ebf0 35%,
+      #c5cfd7 65%,
+      #9eabb6 100%
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* =========================================================
+   BLUE HIGHLIGHT
+========================================================= */
+
+.why-heading h2 strong {
+  color: #00aeef;
+
+  font-weight: 800;
+
+  -webkit-text-fill-color: #00aeef;
+
+  text-shadow:
+    0 0 20px rgba(0, 174, 239, 0.18);
+}
+
+
+/* =========================================================
+   HEADING DESCRIPTION
+========================================================= */
+
+.why-heading p {
+  width: 100%;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  color: #b8c7d9;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   WHY GRID
+========================================================= */
+
+.why-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 28px;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   WHY CARD
+========================================================= */
+
+.why-card {
+  min-height: 310px;
+
+  padding: 42px 30px 35px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  border-radius: 22px;
+
+  border: 1px solid
+    rgba(151, 190, 220, 0.20);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 54, 87, 0.94),
+      rgba(3, 23, 42, 0.97)
+    );
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(12px);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   TOP BLUE LINE
+========================================================= */
+
+.why-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #00aeef,
+      #48d8ff,
+      #00aeef,
+      transparent
+    );
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD BLUE GLOW
+========================================================= */
+
+.why-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+
+  height: 220px;
+
+  right: -140px;
+
+  bottom: -140px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 174, 239, 0.11),
+      transparent 70%
+    );
+
+  pointer-events: none;
+
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.why-card:hover {
+  transform: translateY(-11px);
+
+  border-color:
+    rgba(0, 174, 239, 0.55);
+
+  box-shadow:
+    0 26px 60px rgba(0, 0, 0, 0.42),
+    0 0 30px rgba(0, 174, 239, 0.12),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   TOP LINE HOVER
+========================================================= */
+
+.why-card:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   GLOW HOVER
+========================================================= */
+
+.why-card:hover::after {
+  width: 300px;
+
+  height: 300px;
+}
+
+
+/* =========================================================
+   CARD NUMBER
+========================================================= */
+
+.why-number {
+  position: absolute;
+
+  top: 18px;
+
+  right: 22px;
+
+  color:
+    rgba(190, 205, 218, 0.30);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.why-icon {
+  width: 78px;
+
+  height: 78px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  color: #e4edf4;
+
+  font-size: 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0c659b,
+      #063455
+    );
+
+  border: 1px solid
+    rgba(0, 174, 239, 0.35);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.30),
+    0 0 22px rgba(0, 174, 239, 0.08),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.10);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.why-card:hover .why-icon {
+  transform:
+    translateY(-5px)
+    scale(1.05);
+
+  color: #ffffff;
+
+  border-color:
+    rgba(0, 174, 239, 0.75);
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.42),
+    0 0 30px rgba(0, 174, 239, 0.20);
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.why-card h3 {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0 0 15px;
+
+  font-size: 21px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #dfe6ec 45%,
+      #aebbc6 100%
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.why-card p {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0;
+
+  color: #aebdca;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .why-choose {
+    padding: 90px 0;
+  }
+
+
+  .why-heading {
+    margin-bottom: 52px;
+  }
+
+
+  .why-heading h2 {
+    font-size: 40px;
+  }
+
+
+  .why-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .why-container {
+    width: 91%;
+  }
+
+
+  .why-heading {
+    max-width: 700px;
+  }
+
+
+  .why-heading h2 {
+    font-size: 36px;
+  }
+
+
+  .why-heading p {
+    font-size: 15px;
+  }
+
+
+  .why-card {
+    min-height: 300px;
+
+    padding:
+      38px
+      26px
+      32px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .why-choose {
+    padding: 75px 0;
+  }
+
+
+  .why-container {
+    width: 90%;
+  }
+
+
+  .why-heading {
+    margin-bottom: 45px;
+  }
+
+
+  .why-heading span {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .why-heading h2 {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .why-heading p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+
+  .why-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  .why-card {
+    min-height: auto;
+
+    padding:
+      35px
+      25px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .why-choose {
+    padding: 65px 0;
+  }
+
+
+  .why-heading span {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .why-heading h2 {
+    font-size: 28px;
+  }
+
+
+  .why-heading p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  .why-card {
+    padding:
+      34px
+      22px
+      30px;
+
+    border-radius: 19px;
+  }
+
+
+  .why-icon {
+    width: 68px;
+
+    height: 68px;
+
+    margin-bottom: 22px;
+
+    border-radius: 16px;
+
+    font-size: 27px;
+  }
+
+
+  .why-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .why-card p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .why-heading h2 {
+    font-size: 26px;
+  }
+
+
+  .why-card {
+    padding:
+      30px
+      20px
+      28px;
+  }
+
+
+  .why-icon {
+    width: 64px;
+
+    height: 64px;
+
+    font-size: 25px;
+  }
+
+}

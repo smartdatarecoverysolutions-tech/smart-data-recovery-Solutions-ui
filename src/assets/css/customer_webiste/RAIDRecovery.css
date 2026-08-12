@@ -1,0 +1,608 @@
+/* =========================================================
+   RAID DATA RECOVERY
+   PREMIUM DARK BLUE DESIGN
+========================================================= */
+
+.raid-recovery-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 5% 80px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(0, 174, 239, 0.14),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #061d32,
+      #082b46,
+      #061a2d
+    );
+
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.raid-recovery-header {
+  max-width: 1050px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+
+/* ICON */
+
+.raid-recovery-icon {
+  width: 105px;
+  height: 105px;
+
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #00aeef,
+    #0077d9
+  );
+
+  border-radius: 28px;
+
+  font-size: 48px;
+  color: #ffffff;
+
+  box-shadow:
+    0 20px 45px rgba(0, 174, 239, 0.28),
+    0 0 45px rgba(0, 174, 239, 0.12);
+}
+
+
+/* SMALL LABEL */
+
+.raid-recovery-label {
+  display: block;
+
+  margin-bottom: 15px;
+
+  color: #00aeef;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 6px;
+}
+
+
+/* MAIN TITLE */
+
+.raid-recovery-header h1 {
+  margin: 0 0 25px;
+
+  font-size: clamp(38px, 5vw, 64px);
+
+  line-height: 1.1;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.raid-recovery-header h1 strong {
+  color: #00aeef;
+}
+
+
+/* DESCRIPTION */
+
+.raid-recovery-header p {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  color: #b9ccdc;
+
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   CONTENT GRID
+========================================================= */
+
+.raid-recovery-content {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.raid-recovery-box {
+  position: relative;
+
+  min-height: 430px;
+
+  padding: 42px 36px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(31, 68, 96, 0.82),
+      rgba(5, 42, 69, 0.94)
+    );
+
+  border: 1px solid rgba(132, 185, 218, 0.18);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* TOP BLUE LINE */
+
+.raid-recovery-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 32px;
+  right: 32px;
+
+  height: 4px;
+
+  background: linear-gradient(
+    90deg,
+    #00aeef,
+    #0077d9
+  );
+
+  border-radius: 0 0 10px 10px;
+}
+
+
+/* HOVER */
+
+.raid-recovery-box:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0, 174, 239, 0.45);
+
+  box-shadow:
+    0 25px 60px rgba(0, 174, 239, 0.13);
+}
+
+
+/* =========================================================
+   CARD NUMBER
+========================================================= */
+
+.raid-recovery-box-number {
+  position: absolute;
+
+  top: 25px;
+  right: 28px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================================
+   CARD ICON
+========================================================= */
+
+.raid-recovery-box-icon {
+  width: 54px;
+  height: 54px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 174, 239, 0.12);
+
+  border: 1px solid rgba(0, 174, 239, 0.22);
+
+  border-radius: 15px;
+
+  color: #00aeef;
+
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   CARD TITLES
+========================================================= */
+
+.raid-recovery-box h2 {
+  margin: 0 0 25px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+
+.raid-recovery-box h3 {
+  margin: 30px 0 12px;
+
+  color: #00aeef;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   CARD PARAGRAPH
+========================================================= */
+
+.raid-recovery-box p {
+  margin: 0;
+
+  color: #b9ccdc;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.raid-recovery-box ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.raid-recovery-box li {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 14px 0;
+
+  color: #d7e5ef;
+
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+
+.raid-recovery-box li:last-child {
+  border-bottom: none;
+}
+
+
+/* LIST ICON */
+
+.raid-recovery-box li svg {
+  flex-shrink: 0;
+
+  color: #00aeef;
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.raid-recovery-cta {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 70px auto 0;
+
+  padding: 45px 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #082f4e,
+      #07527e
+    );
+
+  border: 1px solid
+    rgba(0, 174, 239, 0.25);
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+.raid-recovery-cta span {
+  color: #00aeef;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+
+.raid-recovery-cta h2 {
+  margin: 10px 0;
+
+  font-size: 30px;
+
+  line-height: 1.3;
+
+  color: #ffffff;
+}
+
+
+.raid-recovery-cta h2 strong {
+  color: #00aeef;
+}
+
+
+.raid-recovery-cta p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #b9ccdc;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* CTA BUTTON */
+
+.raid-recovery-cta a {
+  flex-shrink: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 16px 28px;
+
+  background: linear-gradient(
+    135deg,
+    #00aeef,
+    #0077d9
+  );
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 50px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow:
+    0 12px 30px rgba(0, 174, 239, 0.25);
+
+  transition: 0.3s ease;
+}
+
+
+.raid-recovery-cta a:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 174, 239, 0.35);
+}
+
+
+.raid-recovery-cta a span {
+  color: #ffffff;
+
+  font-size: 20px;
+
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .raid-recovery-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .raid-recovery-box:last-child {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .raid-recovery-page {
+    padding: 70px 20px 60px;
+  }
+
+
+  .raid-recovery-header {
+    margin-bottom: 50px;
+  }
+
+
+  .raid-recovery-icon {
+    width: 85px;
+    height: 85px;
+
+    border-radius: 22px;
+
+    font-size: 38px;
+  }
+
+
+  .raid-recovery-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+
+
+  .raid-recovery-header h1 {
+    font-size: 38px;
+  }
+
+
+  .raid-recovery-header p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+
+  .raid-recovery-content {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+
+  .raid-recovery-box:last-child {
+    grid-column: auto;
+  }
+
+
+  .raid-recovery-box {
+    min-height: auto;
+
+    padding: 35px 25px;
+  }
+
+
+  .raid-recovery-box h2 {
+    font-size: 22px;
+  }
+
+
+  .raid-recovery-cta {
+    margin-top: 45px;
+
+    padding: 35px 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .raid-recovery-cta h2 {
+    font-size: 25px;
+  }
+
+
+  .raid-recovery-cta a {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .raid-recovery-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .raid-recovery-header h1 {
+    font-size: 32px;
+  }
+
+
+  .raid-recovery-label {
+    letter-spacing: 3px;
+  }
+
+
+  .raid-recovery-box {
+    padding: 32px 22px;
+  }
+
+
+  .raid-recovery-box li {
+    font-size: 14px;
+  }
+
+}

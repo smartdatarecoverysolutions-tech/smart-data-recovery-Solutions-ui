@@ -1,0 +1,103 @@
+/* ===========================
+   QUICK LINKS CONTAINER
+=========================== */
+
+.quicklinks-container {
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    display: inline-block;
+    width: 50%;
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.quicklinks-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+    font-size: 34px;
+    font-weight: bold;
+    border-bottom: 2px solid #e3f2fd;
+    padding-bottom: 15px;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.quicklinks-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.quick-card {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 22px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.quick-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* ===========================
+   COLORS
+=========================== */
+
+.customer-add {
+    background: #1976d2;
+}
+
+.customer-list {
+    background: #1565c0;
+}
+
+.job-add {
+    background: #7b1fa2;
+}
+
+.job-list {
+    background: #6a1b9a;
+}
+
+.payment-add {
+    background: #2e7d32;
+}
+
+.payment-list {
+    background: #1b5e20;
+}
+
+.invoice {
+    background: #d32f2f;
+}
+
+.invoice-list {
+    background: #6f42c1;
+}
+
+.feedback-list {
+    background: #20c997;
+}
+
+.reports {
+    background: #ef6c00;
+}

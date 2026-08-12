@@ -1,0 +1,191 @@
+/* PAGE */
+
+.report-container {
+
+    background: #f4f6f9;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+/* NAVBAR */
+
+.invoice-navbar {
+
+    display: grid;
+
+    grid-template-columns:
+        120px
+        1fr
+        120px;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+
+    padding: 18px 25px;
+
+    border-radius: 14px;
+
+    margin-bottom: 20px;
+}
+
+.invoice-navbar-title {
+
+    text-align: center;
+
+    color: white;
+
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+/* BUTTONS */
+
+.nav-btn {
+
+    background: white;
+
+    color: #0d47a1;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+
+    background: #e3f2fd;
+}
+
+/* EXPORT BUTTONS */
+
+.export-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.excel-btn {
+
+    background: #28a745;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.excel-btn:hover {
+
+    background: #218838;
+}
+
+.pdf-btn {
+
+    background: #dc3545;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.pdf-btn:hover {
+
+    background: #c82333;
+}
+
+/* TABLE */
+
+.table-wrapper {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(
+            0,
+            0,
+            0,
+            0.1
+        );
+}
+
+.report-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.report-table th {
+
+    background: linear-gradient(
+        135deg,
+        #00897b,
+        #26a69a
+    );
+
+    color: white;
+
+    padding: 14px;
+
+    text-align: center;
+}
+
+.report-table td {
+
+    padding: 12px;
+
+    border-bottom:
+        1px solid #eee;
+
+    text-align: center;
+}
+
+.report-table tr:nth-child(even) {
+
+    background: #f8f9fa;
+}
+
+.report-table tr:hover {
+
+    background: #e3f2fd;
+}

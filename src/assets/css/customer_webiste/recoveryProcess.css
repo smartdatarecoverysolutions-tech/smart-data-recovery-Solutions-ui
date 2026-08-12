@@ -1,0 +1,852 @@
+/* =========================================================
+   SMART DATA RECOVERY
+   PREMIUM RECOVERY PROCESS
+   BLUE LUXURY + SILVER UI
+========================================================= */
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+.process {
+  width: 100%;
+
+  padding: 105px 0;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(0, 174, 239, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(0, 102, 204, 0.18),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #061a2f 0%,
+      #082d4f 48%,
+      #075ca0 100%
+    );
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION - LEFT
+========================================================= */
+
+.process::before {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  top: -330px;
+  left: -250px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 174, 239, 0.14),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION - RIGHT
+========================================================= */
+
+.process::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -250px;
+  bottom: -300px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 102, 204, 0.20),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.process-container {
+  width: 92%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.process-heading {
+  width: 100%;
+
+  max-width: 850px;
+
+  margin: 0 auto 62px;
+
+  text-align: center;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   SMALL TITLE
+========================================================= */
+
+.process-heading span {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #00aeef;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  line-height: 1.5;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.process-heading h2 {
+  margin: 0 0 18px;
+
+  font-size: 44px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  letter-spacing: -1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #e5ebf0 35%,
+      #c5cfd7 65%,
+      #9eabb6 100%
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* =========================================================
+   BLUE HEADING HIGHLIGHT
+========================================================= */
+
+.process-heading h2 strong {
+  color: #00aeef;
+
+  font-weight: 800;
+
+  -webkit-text-fill-color: #00aeef;
+
+  text-shadow:
+    0 0 20px rgba(0, 174, 239, 0.18);
+}
+
+
+/* =========================================================
+   HEADING DESCRIPTION
+========================================================= */
+
+.process-heading p {
+  width: 100%;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  color: #b8c7d9;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   PROCESS GRID
+========================================================= */
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 22px;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   CONNECTING LINE
+========================================================= */
+
+.process-grid::before {
+  content: "";
+
+  position: absolute;
+
+  top: 105px;
+
+  left: 8%;
+
+  right: 8%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(0, 174, 239, 0.45),
+      rgba(0, 174, 239, 0.45),
+      transparent
+    );
+
+  z-index: 0;
+}
+
+
+/* =========================================================
+   PROCESS CARD
+========================================================= */
+
+.process-card {
+  min-height: 330px;
+
+  padding: 40px 24px 32px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  border-radius: 22px;
+
+  border: 1px solid
+    rgba(151, 190, 220, 0.20);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 54, 87, 0.94),
+      rgba(3, 23, 42, 0.97)
+    );
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.30),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(12px);
+
+  z-index: 2;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+/* =========================================================
+   TOP BLUE LINE
+========================================================= */
+
+.process-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #00aeef,
+      #48d8ff,
+      #00aeef,
+      transparent
+    );
+
+  transform: scaleX(0);
+
+  transform-origin: center;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD GLOW
+========================================================= */
+
+.process-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+
+  height: 220px;
+
+  right: -140px;
+
+  bottom: -140px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 174, 239, 0.11),
+      transparent 70%
+    );
+
+  pointer-events: none;
+
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.process-card:hover {
+  transform: translateY(-11px);
+
+  border-color:
+    rgba(0, 174, 239, 0.55);
+
+  box-shadow:
+    0 26px 60px rgba(0, 0, 0, 0.42),
+    0 0 30px rgba(0, 174, 239, 0.12),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   TOP LINE HOVER
+========================================================= */
+
+.process-card:hover::before {
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   GLOW HOVER
+========================================================= */
+
+.process-card:hover::after {
+  width: 300px;
+
+  height: 300px;
+}
+
+
+/* =========================================================
+   STEP NUMBER
+========================================================= */
+
+.step-number {
+  position: absolute;
+
+  top: 18px;
+
+  right: 20px;
+
+  color:
+    rgba(190, 205, 218, 0.30);
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   PROCESS ICON
+========================================================= */
+
+.process-icon {
+  width: 78px;
+
+  height: 78px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  color: #e4edf4;
+
+  font-size: 29px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0c659b,
+      #063455
+    );
+
+  border: 1px solid
+    rgba(0, 174, 239, 0.35);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.30),
+    0 0 22px rgba(0, 174, 239, 0.08),
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.10);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   ICON HOVER
+========================================================= */
+
+.process-card:hover .process-icon {
+  transform:
+    translateY(-5px)
+    scale(1.05);
+
+  color: #ffffff;
+
+  border-color:
+    rgba(0, 174, 239, 0.75);
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, 0.42),
+    0 0 30px rgba(0, 174, 239, 0.20);
+}
+
+
+/* =========================================================
+   PROCESS TITLE
+========================================================= */
+
+.process-card h3 {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0 0 14px;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.1px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #dfe6ec 45%,
+      #aebbc6 100%
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+
+/* =========================================================
+   PROCESS DESCRIPTION
+========================================================= */
+
+.process-card p {
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0;
+
+  color: #aebdca;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.75;
+
+  letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   BOTTOM STEP LINE
+========================================================= */
+
+.step-line {
+  width: 50px;
+
+  height: 2px;
+
+  margin: 24px auto 0;
+
+  position: relative;
+
+  z-index: 2;
+
+  overflow: hidden;
+
+  background:
+    rgba(255, 255, 255, 0.08);
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   STEP LINE ACTIVE PART
+========================================================= */
+
+.step-line span {
+  display: block;
+
+  width: 0;
+
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00aeef,
+      #48d8ff
+    );
+
+  transition:
+    width 0.4s ease;
+}
+
+
+/* =========================================================
+   STEP LINE HOVER
+========================================================= */
+
+.process-card:hover .step-line span {
+  width: 100%;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+  .process {
+    padding: 90px 0;
+  }
+
+
+  .process-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+  }
+
+
+  .process-grid::before {
+    display: none;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .process-container {
+    width: 91%;
+  }
+
+
+  .process-heading {
+    margin-bottom: 52px;
+  }
+
+
+  .process-heading h2 {
+    font-size: 40px;
+  }
+
+
+  .process-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+  }
+
+
+  .process-card {
+    min-height: 315px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .process {
+    padding: 75px 0;
+  }
+
+
+  .process-container {
+    width: 90%;
+  }
+
+
+  .process-heading {
+    margin-bottom: 45px;
+  }
+
+
+  .process-heading span {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .process-heading h2 {
+    margin-bottom: 16px;
+
+    font-size: 32px;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.5px;
+  }
+
+
+  .process-heading p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+
+  .process-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+
+  .process-card {
+    min-height: auto;
+
+    padding:
+      35px
+      25px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .process {
+    padding: 65px 0;
+  }
+
+
+  .process-heading span {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .process-heading h2 {
+    font-size: 28px;
+  }
+
+
+  .process-heading p {
+    font-size: 14px;
+
+    line-height: 1.7;
+  }
+
+
+  .process-card {
+    padding:
+      34px
+      22px
+      30px;
+
+    border-radius: 19px;
+  }
+
+
+  .process-icon {
+    width: 68px;
+
+    height: 68px;
+
+    margin-bottom: 22px;
+
+    border-radius: 16px;
+
+    font-size: 27px;
+  }
+
+
+  .process-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+  }
+
+
+  .process-card p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .process-heading h2 {
+    font-size: 26px;
+  }
+
+
+  .process-card {
+    padding:
+      30px
+      20px
+      28px;
+  }
+
+
+  .process-icon {
+    width: 64px;
+
+    height: 64px;
+
+    font-size: 25px;
+  }
+
+}

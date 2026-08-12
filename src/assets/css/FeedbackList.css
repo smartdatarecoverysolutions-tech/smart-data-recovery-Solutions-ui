@@ -1,0 +1,182 @@
+.feedback-page {
+    padding: 20px;
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.feedback-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #00897b,
+        #26a69a
+    );
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.feedback-navbar h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+}
+
+/* BUTTONS */
+
+.nav-btn {
+    background: white;
+    color: #00897b;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #e0f2f1;
+}
+
+/* CARD */
+
+.feedback-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+
+.feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.feedback-table th {
+    background: #00897b;
+    color: white;
+    padding: 14px;
+}
+
+.feedback-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.feedback-table tr:hover {
+    background: #f1fffd;
+}
+
+/* NO DATA */
+
+.no-data {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 16px;
+}
+.feedback-navbar {
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #00897b,
+        #26a69a
+    );
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background: white;
+    color: #00897b;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #e0f2f1;
+}
+
+.feedback-heading {
+    flex: 1;
+
+    text-align: center;
+
+    color: white;
+
+    margin: 0;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.navbar-space {
+    width: 90px;
+}
+.feedback-card {
+    overflow-x: auto;
+}
+
+.feedback-table {
+    width: 100%;
+    min-width: 1200px;
+    border-collapse: collapse;
+}
+/* Search Bar */
+
+.feedback-search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 20px;
+}
+
+.feedback-search-box {
+    width: 320px;
+    padding: 10px 15px;
+    border: 2px solid #1976d2;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+.feedback-search-box:focus {
+    border-color: #0d47a1;
+}

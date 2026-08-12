@@ -1,0 +1,281 @@
+.feedback-container {
+
+    max-width: 700px;
+
+    margin: 40px auto;
+
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.12);
+
+    font-family: Arial, sans-serif;
+}
+
+.feedback-title {
+
+    text-align: center;
+
+    color: #1565c0;
+
+    margin-bottom: 30px;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+.feedback-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.feedback-form label {
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 5px;
+
+    display: block;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus,
+.feedback-form select:focus {
+
+    border-color: #1565c0;
+
+    outline: none;
+
+    box-shadow:
+        0 0 5px rgba(21,101,192,0.3);
+}
+
+.feedback-form textarea {
+
+    resize: vertical;
+
+    min-height: 100px;
+}
+
+.feedback-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.feedback-rating {
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+.feedback-rating button {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e0e0e0;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.feedback-rating button:hover {
+
+    background: #ffd54f;
+}
+
+.feedback-rating .active {
+
+    background: #ffb300;
+
+    color: white;
+}
+
+.recovery-box {
+
+    background: #e3f2fd;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #0d47a1;
+}
+
+.submit-feedback-btn {
+
+    background: #2e7d32;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-feedback-btn:hover {
+
+    background: #1b5e20;
+}
+
+.cancel-feedback-btn {
+
+    background: #d32f2f;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cancel-feedback-btn:hover {
+
+    background: #b71c1c;
+}
+
+.feedback-actions {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .feedback-container {
+
+        margin: 20px;
+
+        padding: 20px;
+    }
+
+    .feedback-row {
+
+        grid-template-columns: 1fr;
+    }
+
+    .feedback-actions {
+
+        flex-direction: column;
+    }
+}
+.feedback-navbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-navbar h2 {
+    margin: 0;
+}
+.error-text {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+    border-color: red;
+}
+
+input,
+textarea,
+select {
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}

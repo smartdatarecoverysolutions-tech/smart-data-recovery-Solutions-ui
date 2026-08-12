@@ -1,0 +1,105 @@
+/* ===========================
+   Employee Dashboard
+=========================== */
+
+.employee-dashboard-main {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+    padding: 30px;
+    background: #f5f7fa;
+}
+
+.employee-dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.employee-dashboard-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.employee-dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+.employee-dashboard-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #555;
+    font-weight: 600;
+}
+
+.employee-dashboard-card h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Card Colors */
+
+.employee-dashboard-card.customers {
+    border-top: 6px solid #2196F3;
+}
+
+.employee-dashboard-card.jobs {
+    border-top: 6px solid #673AB7;
+}
+
+.employee-dashboard-card.received {
+    border-top: 6px solid #009688;
+}
+
+.employee-dashboard-card.diagnosis {
+    border-top: 6px solid #FF9800;
+}
+
+.employee-dashboard-card.recovery {
+    border-top: 6px solid #3F51B5;
+}
+
+.employee-dashboard-card.completed {
+    border-top: 6px solid #4CAF50;
+}
+
+.employee-dashboard-card.delivered {
+    border-top: 6px solid #00BCD4;
+}
+
+.employee-dashboard-card.failed {
+    border-top: 6px solid #F44336;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .employee-dashboard-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .employee-dashboard-main {
+        padding: 20px;
+    }
+
+    .employee-dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-dashboard-card h1 {
+        font-size: 32px;
+    }
+
+    .employee-dashboard-card h3 {
+        font-size: 18px;
+    }
+}
