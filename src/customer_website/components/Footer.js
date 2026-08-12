@@ -3,13 +3,11 @@ import React from "react";
 import {
   FaPhoneAlt,
   FaEnvelope,
-  FaMapMarkerAlt,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
+  FaMapMarkerAlt,  
+  FaInstagram,  
   FaYoutube,
   FaArrowUp,
-   FaWhatsapp,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
@@ -82,21 +80,27 @@ function Footer() {
                           
                         </a>
 
-            <a
-              href="#"
-              aria-label="Instagram"
-            >
-              <FaInstagram />
-            </a>
+         <a
+  href="https://www.instagram.com/smartdatarecoverysolutions/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Instagram"
+>
+  <FaInstagram />
+</a>
+
+    <a
+  href="https://www.youtube.com/@smartdatarecoverysolutions"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="YouTube"
+>
+  <FaYoutube />
+</a>
 
             
 
-            <a
-              href="#"
-              aria-label="YouTube"
-            >
-              <FaYoutube />
-            </a>
+           
 
           </div>
 
